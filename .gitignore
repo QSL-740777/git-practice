@@ -1,0 +1,24 @@
+# Python 运行产生的缓存，每次跑脚本都会变，提交上去纯属噪音
+__pycache__/
+*.py[cod]
+
+# 虚拟环境，依赖靠 requirements.txt 复现，不该进仓库
+.venv/
+venv/
+
+# 密钥与配置，绝对不能进公开仓库
+.env
+*.key
+*.pem
+
+# 模型权重和数据集，体积大且可用脚本重新生成或另外分发
+*.pt
+*.onnx
+*.engine
+datasets/
+
+# 编辑器/系统杂项
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
